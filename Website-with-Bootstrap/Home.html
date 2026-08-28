@@ -1,0 +1,848 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>SHIELD CARGO HOME</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="Home.css">
+</head>
+<body>
+
+    <section class="font">
+
+        <!-- Top banner section -->
+        <section>
+            <nav class="navbar navbar-expand-lg bg-brand-gradient py-4">
+                <div class="container">
+                    
+                    <div class="navbar-brand fw-bold fs-2 text-white">SHIELD CARGO</div>
+
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNavbar" aria-controls="mainNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="mainNavbar">
+                        
+                        <ul class="navbar-nav align-items-center mx-auto mb-2 mb-lg-0 gap-lg-3">
+                            <li class="nav-item">
+                                <a class="nav-link fw-semibold" href="Home.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link fw-semibold" href="about.html">About us</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link fw-semibold" href="product.html">Wooden packaging</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link fw-semibold" href="service.html">Process & services</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link fw-semibold" href="case.html">Reference</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link fw-semibold" href="news.html">News & Articles</a>
+                            </li>
+                            <li class="nav-item ms-lg-2">
+                                <button class="btn btn-colour text-white fw-semibold px-3 rounded-3" style="background-color: #eb4444;" onclick="window.location.href='contact.html'">Contact us</button>
+                            </li>
+                        </ul>
+
+                        <div class="d-flex align-items-center justify-content-center gap-4 mt-3 mt-lg-0 language-colour">
+                            <span class="text-light fw-bold language active" onclick="selectlanguage(this)">EN</span>
+                            <span class="text-light fw-bold language" onclick="selectlanguage(this)">JP</span>
+                            <span class="text-light fw-bold language" onclick="selectlanguage(this)">TH</span>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </section>
+
+        <!-- hero section -->
+        <section class="bg-brand-gradient text-white py-5">
+            <div class="container">
+                <div class="row align-items-center g-4">
+                    
+                    <!-- Left Context Column -->
+                    <div class="col-lg-6">
+                        <h1 class="display-2 mb-4 lh-3" style="font-weight: 900;">ADVANCE<br class="d-inline">SECURE<br class="d-inline">PACKAGING</h1>
+                        <p class="fs-5 mb-4 lh-base text-white">Reliable packaging solutions for transporting<br class="d-inline">all kinds of goods. Custom wooden crates,<br class="d-inline">pallets, and professional lashing services<br class="d-inline">tailored for industrial needs.</p>
+                        <div class="d-flex gap-4">
+                            <button class="btn text-white fw-bold px-4 py-3 rounded-4 border-0 hover-lift" style="background-color: #eb4444;" onclick="window.location.href='contact.html'">Get in touch</button>
+                            <button class="btn text-dark fw-bold px-4 py-3 rounded-4 border-0 hover-lift" style="background-color: white;"onclick="window.location.href='service.html'">Explore our services</button>
+                        </div>
+                    </div>
+
+                    <!-- Right Carousel Column -->
+                    <div class="col-lg-6">
+                        <div id="heroCarousel" class="carousel slide rounded-4 overflow-hidden shadow-lg position-relative" data-bs-ride="carousel">
+                            
+                            <!-- Carousel Items -->
+                            <div class="carousel-inner">
+                                <!-- Slide 1 -->
+                                <div class="carousel-item active position-relative">
+                                    <img src="Image/hero-image.png" class="d-block w-100 img-fluid object-fit-cover hero-image" alt="Hero Image" onclick="window.location.href='product.html'">
+                                    <div class="position-absolute top-0 start-0 m-3 d-flex flex-column gap-3">
+                                        <span class="badge bg-white text-dark px-3 py-2 rounded-pill fs-6 shadow-sm">IPPC STANDARD</span>
+                                        <span class="badge bg-dark text-white px-3 py-2 rounded-pill fs-6 shadow-sm">HEAT TREATMENT</span>
+                                    </div>
+                                </div>
+
+                                <!-- Slide 2 -->
+                                <div class="carousel-item position-relative">
+                                    <img src="Image/hero-image-2.png" class="d-block w-100 img-fluid object-fit-cover hero-image" alt="Hero Image 2" onclick="window.location.href='product.html'">
+                                    <div class="position-absolute top-0 start-0 m-3 d-flex flex-column gap-3">
+                                        <span class="badge bg-white text-dark px-3 py-2 rounded-pill fs-6 shadow-sm">IPPC STANDARD</span>
+                                        <span class="badge bg-dark text-white px-3 py-2 rounded-pill fs-6 shadow-sm">HEAT TREATMENT</span>
+                                    </div>
+                                </div>
+
+                                <!-- Slide 3 -->
+                                <div class="carousel-item position-relative">
+                                    <img src="Image/hero-image-3.png" class="d-block w-100 img-fluid object-fit-cover hero-image" alt="Hero Image 3" onclick="window.location.href='product.html'">
+                                    <div class="position-absolute top-0 start-0 m-3 d-flex flex-column gap-3">
+                                        <span class="badge bg-white text-dark px-3 py-2 rounded-pill fs-6 shadow-sm">ISPM-15 CERTIFIED</span>
+                                        <span class="badge bg-dark text-white px-3 py-2 rounded-pill fs-6 shadow-sm">HEAVY DUTY</span>
+                                    </div>
+                                </div>
+
+                                <!-- Slide 4 -->
+                                <div class="carousel-item position-relative">
+                                    <img src="Image/hero-image-4.png" class="d-block w-100 img-fluid object-fit-cover hero-image" alt="Hero Image 4" onclick="window.location.href='product.html'">
+                                    <div class="position-absolute top-0 start-0 m-3 d-flex flex-column gap-3">
+                                        <span class="badge bg-white text-dark px-3 py-2 rounded-pill fs-6 shadow-sm">CUSTOM DESIGN</span>
+                                        <span class="badge bg-dark text-white px-3 py-2 rounded-pill fs-6 shadow-sm">CAD TESTED</span>
+                                    </div>
+                                </div>
+
+                                <!-- Slide 5 -->
+                                <div class="carousel-item position-relative">
+                                    <img src="Image/hero-image-5.png" class="d-block w-100 img-fluid object-fit-cover hero-image" alt="Hero Image 5" onclick="window.location.href='product.html'">
+                                    <div class="position-absolute top-0 start-0 m-3 d-flex flex-column gap-3">
+                                        <span class="badge bg-white text-dark px-3 py-2 rounded-pill fs-6 shadow-sm">GLOBAL FREIGHT</span>
+                                        <span class="badge bg-dark text-white px-3 py-2 rounded-pill fs-6 shadow-sm">VACUUM SEALED</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- Carousel Indicators -->
+                            <div class="carousel-indicators mb-2">
+                                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="3" aria-label="Slide 4"></button>
+                                <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="4" aria-label="Slide 5"></button>
+                            </div>
+                        </div>
+                    </div> 
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact section -->
+        <section class="bg-brand-gradient py-4">
+            <div class="container">
+                <div class="row g-4">
+                    
+                    <!-- Contact Box 1 : Phone -->
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <div class="d-flex align-items-center bg-white p-3 rounded-4 gap-3 contact-card" onclick="window.location.href='contact.html'">
+                            <img src="Image/contact-image.png" alt="Contact-Image" width="40" height="40">
+                            <div>
+                                <span class="d-block text-dark fs-6 fw-semibold">Contact us</span>
+                                <p class="mb-0 fw-bold text-dark fs-6">+66 81 098 5542</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Contact Box 2 : Line -->
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <div class="d-flex align-items-center bg-white p-3 rounded-4 gap-3 contact-card" onclick="window.location.href='contact.html'">
+                            <img src="Image/add-line.png" alt="Add Line" width="40" height="40">
+                            <div>
+                                <span class="d-block text-dark fs-6 fw-semibold">Add Line</span>
+                                <p class="mb-0 fw-bold text-dark fs-6">@shieldcargo</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Contact Box 3 : Facebook -->
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <div class="d-flex align-items-center bg-white p-3 rounded-4 gap-3 contact-card" onclick="window.location.href='contact.html'">
+                            <img src="Image/facebook-icon.png" alt="Facebook Icon" width="40" height="40">
+                            <div>
+                                <span class="d-block text-dark fs-6 fw-semibold">Facebook</span>
+                                <p class="mb-0 fw-bold text-dark fs-6">Shield_Cargo</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Contact Box 4 : Email -->
+                    <div class="col-12 col-sm-6 col-lg-3">
+                        <div class="d-flex align-items-center bg-white p-3 rounded-4 shadow-sm gap-3 contact-card" onclick="window.location.href='contact.html'">
+                            <img src="Image/email-icon.png" alt="Email Icon" width="40" height="40">
+                            <div>
+                                <span class="d-block text-dark fs-6 fw-semibold">Email</span>
+                                <p class="mb-0 fw-bold text-dark fs-6 text-truncate">sales@shieldcargo.com</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Professional Services section -->
+        <section class="py-5 bg-light">
+            <div class="container text-center">
+                <h2 class="text-dark fw-bold display-6 mb-2">Our Professional Services</h2>
+                <hr class="professional-line rounded-3 opacity-100 mx-auto my-4 border-0" style="width: 100px; height: 6px; background-color: #eb4444;">
+                <p class="text-dark fw-semibold fs-5 mb-0 mx-auto" style="max-width: 680px;">Shield Cargo Service Co., Ltd. provides comprehensive wooden packaging solutions designed to withstand the rigors of global transport.</p>
+            </div>
+        </section>
+
+        <!-- Services Grid Section -->
+        <section class="pb-5 bg-light">
+            <div class="container">
+                <div class="row g-5 justify-content-center">
+
+                    <!-- Card 1: Custom Engineering -->
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="service-img-wrapper d-flex justify-content-center">
+                            <img src="Image/custom-design.png" alt="Custom-Engineering" width="80" height="80">
+                        </div>
+                        <div class="service-body p-3">
+                            <h3 class="h5 text-center fw-bold text-dark mb-2">Custom Engineering</h3>
+                            <p class="text-center text-dark fw-semibold small mb-0">Tailored packaging designs using<br class="d-inline">CAD technology to ensure perfect<br class="d-inline">fit and maximum protection.</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Card 2: Structural Integrity -->
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="service-img-wrapper d-flex justify-content-center">
+                            <img src="Image/prototype.png" alt="Structural-Integrity" width="80" height="80">
+                        </div>
+                        <div class="service-body p-3">
+                            <h3 class="h5 text-center fw-bold text-dark mb-2">Structural Integrity</h3>
+                            <p class="text-center text-dark fw-semibold small mb-0">Rigorous testing of package<br class="d-inline">strength and durability before<br class="d-inline">full-scale production.</p>
+                        </div>
+                    </div>
+
+                    <!-- Card 3: Secure Storage -->
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="service-img-wrapper d-flex justify-content-center">
+                            <img src="Image/warehouse.png" alt="Secure-Storage" width="80" height="80">
+                        </div>
+                        <div class="service-body p-3">
+                            <h3 class="h5 text-center fw-bold text-dark mb-2">Secure Storage</h3>
+                            <p class="text-center text-dark fw-semibold small mb-0">Strategic storage solutions and<br class="d-inline">supply chain management for<br class="d-inline">your finished goods.</p>
+                        </div>
+                    </div>
+
+                    <!-- Card 4: Global Freight Dispatch -->
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <div class="service-img-wrapper d-flex justify-content-center">
+                            <img src="Image/global-delivery.png" alt="Global-Freight-Dispatch" width="80" height="80">
+                        </div>
+                        <div class="service-body p-3">
+                            <h3 class="h5 text-center fw-bold text-dark mb-2">Global Freight Dispatch</h3>
+                            <p class="text-center text-dark fw-semibold small mb-0">Expert handling of logistics and<br class="d-inline">distribution, ensuring on-time<br class="d-inline">arrival worldwide.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Service Offering section -->
+        <section class="py-5 bg-brand-gradient text-white">
+            <div class="container">
+                
+                <!-- Header Row -->
+                <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-center mb-5 gap-3">
+                    <div>
+                        <h2 class="fw-bold display-5 mb-4">Our Full Service Offering</h2>
+                    </div>
+                    <div>
+                        <button class="btn btn-light fs-5 fw-bold px-3 py-2 rounded-3 border-0" onclick="window.location.href='service.html'">View Full Service</button>
+                    </div>
+                </div>
+
+                <!-- Service Cards Grid -->
+                <div class="row g-5">
+
+                    <!-- Service 1: On-Site Industrial Packing -->
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="service-full-card d-flex flex-column bg-white text-dark h-100 rounded-3 overflow-hidden" onclick="window.location.href='service.html'">
+                            <div class="service-img-container position-relative">
+                                <img src="Image/package-service.png" alt="Package Service" style="width: 100%; height: 100%; object-fit: cover;">
+                                <span class="service-tag position-absolute text-white small fw-semibold px-3 py-1 rounded-pill">On-Site Industrial Packing</span>
+                            </div>
+                            <div class="p-4 d-flex flex-column">
+                                <h3 class="h5 fw-bold mb-2">ON-SITE INDUSTRIAL PACKING</h3>
+                                <p class="text-dark fw-semibold fs-6 mt-2 mb-4">Professional packing solutions for all types of<br class="d-inline">industrial cargo, ensuring safety during transit.</p>
+                                
+                                <!-- Bullets -->
+                                <div class="mt-auto d-flex flex-column gap-2">
+                                    <div class="d-flex align-items-center gap-2">
+                                        <img src="Image/arrow.png" alt="arrow" style="width: 16px; height: 16px; object-fit: contain;">
+                                        <span class="fs-6 fw-semibold text-dark">Industrial crating</span>
+                                    </div>
+                                    <div class="d-flex align-items-center gap-2">
+                                        <img src="Image/arrow.png" alt="arrow" style="width: 16px; height: 16px; object-fit: contain;">
+                                        <span class="fs-6 fw-semibold text-dark">Shrink wrapping</span>
+                                    </div>
+                                    <div class="d-flex align-items-center gap-2">
+                                        <img src="Image/arrow.png" alt="arrow" style="width: 16px; height: 16px; object-fit: contain;">
+                                        <span class="fs-6 fw-semibold text-dark">Custom Pallets</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Service 2: Moisture & Vacuum Sealing -->
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="service-full-card d-flex flex-column bg-white text-dark h-100 shadow-sm rounded-3 overflow-hidden" onclick="window.location.href='service.html'">
+                            <div class="service-img-container position-relative">
+                                <img src="Image/vacuum-service.png" alt="Vacuum Packaging" style="width: 100%; height: 100%; object-fit: cover;">
+                                <span class="service-tag position-absolute text-white small fw-semibold px-3 py-1 rounded-pill">Moisture & Vacuum Sealing</span>
+                            </div>
+                            <div class="p-4 d-flex flex-column">
+                                <h3 class="h5 fw-bold mb-2">MOISTURE & VACUUM SEALING</h3>
+                                <p class="text-dark fw-semibold fs-6 mt-2 mb-4">Specialized moisture-proof protection for sensitive electronic components and machinery.</p>
+                                
+                                <!-- Bullets -->
+                                <div class="mt-auto d-flex flex-column gap-2">
+                                    <div class="d-flex align-items-center gap-2">
+                                        <img src="Image/arrow.png" alt="arrow" style="width: 16px; height: 16px; object-fit: contain;">
+                                        <span class="fs-6 fw-semibold text-dark">Rust Prevention</span>
+                                    </div>
+                                    <div class="d-flex align-items-center gap-2">
+                                        <img src="Image/arrow.png" alt="arrow" style="width: 16px; height: 16px; object-fit: contain;">
+                                        <span class="fs-6 fw-semibold text-dark">Moisture Control</span>
+                                    </div>
+                                    <div class="d-flex align-items-center gap-2">
+                                        <img src="Image/arrow.png" alt="arrow" style="width: 16px; height: 16px; object-fit: contain;">
+                                        <span class="fs-6 fw-semibold text-dark">Long term Storage</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Service 3: Heavy Machinery Rigging -->
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="service-full-card d-flex flex-column bg-white text-dark h-100 shadow-sm rounded-4 overflow-hidden" onclick="window.location.href='service.html'">
+                            <div class="service-img-container position-relative">
+                                <img src="Image/rust-service.png" alt="Rust Prevention Service" style="width: 100%; height: 100%; object-fit: cover;">
+                                <span class="service-tag position-absolute text-white small fw-semibold px-3 py-1 rounded-pill">Heavy Machinery Rigging</span>
+                            </div>
+                            <div class="p-4 d-flex flex-column">
+                                <h3 class="h5 fw-bold mb-2">HEAVY MACHINERY RIGGING</h3>
+                                <p class="text-dark fw-semibold fs-6 mt-2 mb-4">High-grade chemical and physical barriers to protect metal components from corrosion.</p>
+                                
+                                <!-- Bullets -->
+                                <div class="mt-auto d-flex flex-column gap-2">
+                                    <div class="d-flex align-items-center gap-2">
+                                        <img src="Image/arrow.png" alt="arrow" style="width: 16px; height: 16px; object-fit: contain;">
+                                        <span class="fs-6 fw-semibold text-dark">VCI Technology</span>
+                                    </div>
+                                    <div class="d-flex align-items-center gap-2">
+                                        <img src="Image/arrow.png" alt="arrow" style="width: 16px; height: 16px; object-fit: contain;">
+                                        <span class="fs-6 fw-semibold text-dark">Protective Oils</span>
+                                    </div>
+                                    <div class="d-flex align-items-center gap-2">
+                                        <img src="Image/arrow.png" alt="arrow" style="width: 16px; height: 16px; object-fit: contain;">
+                                        <span class="fs-6 fw-semibold text-dark">Sealed Barriers</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Why Choose Shield Cargo section -->
+        <section class="py-5 bg-light">
+            <div class="container">
+                <div class="choose-pack-card bg-white p-4 p-md-5 shadow-sm rounded-4 border border-dark border-2">
+                    <div class="row align-items-center g-4">
+                        
+                        <!-- Left Text -->
+                        <div class="col-12 col-lg-6">
+                            <h2 class="fw-bold text-dark display-6 mb-4">Why Choose Shield Cargo ?</h2>
+                            <p class="text-dark fs-5 fw-semibold mb-0" style="max-width: 500px;">We help you solve your wooden packaging problems with our complete solutions, including package design, prototype packaging, and testing. We ensure your product remains completely safe until it reaches its final destination.</p>
+                        </div>
+
+                        <!-- Right Feature -->
+                        <div class="col-12 col-lg-6">
+                            <div class="row g-3">
+                                
+                                <!-- Icon 1: Safety First -->
+                                <div class="col-6">
+                                    <div class="icon-badge d-flex flex-column align-items-center justify-content-center text-center h-100 border border-dark border-2 rounded-4 mb-2" style="padding: 1.25rem 1rem;">
+                                        <img src="Image/safe-icon.png" alt="Safe Icon" style="width: 30px; height: 30px; object-fit: contain; margin-bottom: 8px;">
+                                        <span class="fs-6 fw-bold text-dark">Safety First</span>
+                                    </div>
+                                </div>
+
+                                <!-- Icon 2: Global Reach -->
+                                <div class="col-6">
+                                    <div class="icon-badge d-flex flex-column align-items-center justify-content-center text-center h-100 border border-dark border-2 rounded-4 mb-2" style="padding: 1.25rem 1rem;">
+                                        <img src="Image/global-icon.png" alt="Global Icon" style="width: 30px; height: 30px; object-fit: contain; margin-bottom: 8px;">
+                                        <span class="fs-6 fw-bold text-dark">Global Reach</span>
+                                    </div>
+                                </div>
+
+                                <!-- Icon 3: Expert Team -->
+                                <div class="col-6">
+                                    <div class="icon-badge d-flex flex-column align-items-center justify-content-center text-center h-100 border border-dark border-2 rounded-4 mb-2" style="padding: 1.25rem 1rem;">
+                                        <img src="Image/expert-icon.png" alt="Expert Icon" style="width: 30px; height: 30px; object-fit: contain; margin-bottom: 8px;">
+                                        <span class="fs-6 fw-bold text-dark">Expert Team</span>
+                                    </div>
+                                </div>
+
+                                <!-- Icon 4: Fast Delivery -->
+                                <div class="col-6">
+                                    <div class="icon-badge d-flex flex-column align-items-center justify-content-center text-center h-100 border border-dark border-2 rounded-4 mb-2" style="padding: 1.25rem 1rem;">
+                                        <img src="Image/fast-icon.png" alt="Fast Icon" style="width: 30px; height: 30px; object-fit: contain; margin-bottom: 8px;">
+                                        <span class="fs-6 fw-bold text-dark">Fast Delivery</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Wooden Packaging Solutions section -->
+        <section class="py-5 bg-brand-gradient text-white">
+            <div class="container">
+
+                <!-- Header Row -->
+                <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-center mb-5 gap-3">
+                    <div>
+                        <h2 class="fw-bold display-5 mb-4">Wooden Packaging Solutions</h2>
+                    </div>
+                    <div>
+                        <button class="btn btn-light fs-5 fw-bold px-4 py-2 rounded-3 border-0" onclick="window.location.href='product.html'">View Full Catalog</button>
+                    </div>
+                </div>
+
+                <!-- 6-Card Solution Grid -->
+                <div class="row g-5">
+
+                    <!-- Solution 1 -->
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="solution-card position-relative rounded-4 overflow-hidden" style="height: 100%;" onclick="window.location.href='product.html'">
+                            <img src="Image/solution1.png" alt="Solution 1" class="solution-card-img object-fit-cover" style="height: 100%; width: 100%; object-fit: cover;">
+                            <div class="solution-overlay position-absolute"></div>
+                            
+                            <span class="solution-tag position-absolute bg-dark text-white fs-6 fw-semibold px-3 py-1 z-2 rounded-pill" style="top: 16px; left: 16px;">Standard</span>
+                
+                            <div class="solution-content d-flex justify-content-between align-items-end position-absolute bottom-0 left-0 right-0 z-2 p-4">
+                                <h3 class="h5 fw-bold text-white mb-0">Heavy-Duty Export Crates</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Solution 2 -->
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="solution-card position-relative rounded-4 overflow-hidden" style="height: 100%;" onclick="window.location.href='product.html'">
+                            <img src="Image/solution2.png" alt="Solution 2" class="solution-card-img object-fit-cover" style="height: 100%; width: 100%; object-fit: cover;">
+                            <div class="solution-overlay position-absolute"></div>
+                            
+                            <span class="solution-tag position-absolute bg-dark text-white fs-6 fw-semibold px-3 py-1 z-2 rounded-pill" style="top: 16px; left: 16px;">Space saving</span>
+                            
+                            <div class="solution-content d-flex justify-content-between align-items-end position-absolute bottom-0 left-0 right-0 z-2 p-4">
+                                <h3 class="h5 fw-bold text-white mb-0">Reinforced Pallet Collars</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Solution 3 -->
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="solution-card position-relative rounded-4 overflow-hidden" style="height: 100%;" onclick="window.location.href='product.html'">
+                            <img src="Image/solution3.png" alt="Solution 3" class="solution-card-img object-fit-cover" style="height: 100%; width: 100%; object-fit: cover;">
+                            <div class="solution-overlay position-absolute"></div>
+                            
+                            <span class="solution-tag position-absolute bg-dark text-white fs-6 fw-semibold px-3 py-1 z-2 rounded-pill" style="top: 16px; left: 16px;">Heavy Duty</span>
+                            
+                            <div class="solution-content d-flex justify-content-between align-items-end position-absolute bottom-0 left-0 right-0 z-2 p-4">
+                                <h3 class="h5 fw-bold text-white mb-0">ISPM-15 Certified Cases</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Solution 4 -->
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="solution-card position-relative rounded-4 overflow-hidden" style="height: 100%;" onclick="window.location.href='product.html'">
+                            <img src="Image/solution4.png" alt="Solution 4" class="solution-card-img object-fit-cover" style="height: 100%; width: 100%; object-fit: cover;">
+                            <div class="solution-overlay position-absolute"></div>
+                            
+                            <span class="solution-tag position-absolute bg-dark text-white fs-6 fw-semibold px-3 py-1 z-2 rounded-pill" style="top: 16px; left: 16px;">Open view</span>
+                            
+                            <div class="solution-content d-flex justify-content-between align-items-end position-absolute bottom-0 left-0 right-0 z-2 p-4">
+                                <h3 class="h5 fw-bold text-white mb-0">Custom Cylindrical Cases</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Solution 5 -->
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="solution-card position-relative rounded-4 overflow-hidden" style="height: 100%;" onclick="window.location.href='product.html'">
+                            <img src="Image/solution5.png" alt="Solution 5" class="solution-card-img object-fit-cover" style="height: 100%; width: 100%; object-fit: cover;">
+                            <div class="solution-overlay position-absolute"></div>
+                            
+                            <span class="solution-tag position-absolute bg-dark text-white fs-6 fw-semibold px-3 py-1 z-2 rounded-pill" style="top: 16px; left: 16px;">Flexible</span>
+                            
+                            <div class="solution-content d-flex justify-content-between align-items-end position-absolute bottom-0 left-0 right-0 z-2 p-4">
+                                <h3 class="h5 fw-bold text-white mb-0">Wooden Pallet Collar</h3>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Solution 6 -->
+                    <div class="col-12 col-md-6 col-lg-4">
+                        <div class="solution-card position-relative rounded-4 overflow-hidden" style="height: 100%;" onclick="window.location.href='product.html'">
+                            <img src="Image/solution6.png" alt="Solution 6" class="solution-card-img object-fit-cover" style="height: 100%; width: 100%; object-fit: cover;">
+                            <div class="solution-overlay position-absolute"></div>
+                            
+                            <span class="solution-tag position-absolute bg-dark text-white fs-6 fw-semibold px-3 py-1 z-2 rounded-pill" style="top: 16px; left: 16px;">Machinery</span>
+                            
+                            <div class="solution-content d-flex justify-content-between align-items-end position-absolute bottom-0 left-0 right-0 z-2 p-4">
+                                <h3 class="h5 fw-bold text-white mb-0">Heavy Duty Skid</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Job References section -->
+        <section class="py-5 bg-light"> 
+            <div class="container">
+
+                <div class="job-header text-center mb-5">
+                    <h3 class="fs-1 fw-bold mb-4">Job References</h3>
+                    <p class="text-dark fs-5 fw-semibold mx-auto">Trusted by leading industrial partners for complex and high-value cargo<br class="d-inline"> protection projects across Thailand and internationally.</p>
+                </div>
+
+                <div class="job-image-column row g-5 mb-5">
+                    <div class="job-image1 col-12 col-sm-6 col-md-4 col-lg-3">
+                        <img src="Image/job1.png" alt="Job 1" class="img-fluid rounded-4 w-100" onclick="window.location.href='case.html'">
+                    </div>
+                    <div class="job-image2 col-12 col-sm-6 col-md-4 col-lg-3">
+                        <img src="Image/job2.png" alt="Job 2" class="img-fluid rounded-4 w-100" onclick="window.location.href='case.html'">
+                    </div>
+                    <div class="job-image3 col-12 col-sm-6 col-md-4 col-lg-3">
+                        <img src="Image/job3.png" alt="Job 3" class="img-fluid rounded-4 w-100" onclick="window.location.href='case.html'">
+                    </div>
+                    <div class="job-image4 col-12 col-sm-6 col-md-4 col-lg-3">
+                        <img src="Image/job4.png" alt="Job 4" class="img-fluid rounded-4 w-100" onclick="window.location.href='case.html'">
+                    </div>
+                    <div class="job-image5 col-12 col-sm-6 col-md-4 col-lg-3">
+                        <img src="Image/job5.png" alt="Job 5" class="img-fluid rounded-4 w-100" onclick="window.location.href='case.html'">
+                    </div>
+                    <div class="job-image6 col-12 col-sm-6 col-md-4 col-lg-3">
+                        <img src="Image/job6.png" alt="Job 6" class="img-fluid rounded-4 w-100" onclick="window.location.href='case.html'">
+                    </div>
+                    <div class="job-image7 col-12 col-sm-6 col-md-4 col-lg-3">
+                        <img src="Image/job7.png" alt="Job 7" class="img-fluid rounded-4 w-100" onclick="window.location.href='case.html'">
+                    </div>
+                    <div class="job-image8 col-12 col-sm-6 col-md-4 col-lg-3">
+                        <img src="Image/job8.png" alt="Job 8" class="img-fluid rounded-4 w-100" onclick="window.location.href='case.html'">
+                    </div>
+                </div>
+
+                <div class="text-center">
+                    <button class="job-reference-btn btn px-4 py-2 fs-4 fw-bold rounded-4" onclick="window.location.href='case.html'">View All References</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Integrated Process section -->
+        <section class="bg-brand-gradient text-white py-5">
+            <div class="container">
+                <div class="row align-items-center g-4 g-lg-5">
+                    
+                    <!-- Left Column: Text & Bullet Points -->
+                    <div class="col-12 col-lg-7">
+                        <div class="left-integrated-text mb-4">
+                            <h3 class="fw-bold display-6 text-white mb-3 lh-base">Our Integrated Process<br class="d-inline"> & Reliable Services</h3>
+                            <p class="fw-semibold fs-6 text-white mb-0 lh-base">We don't just provide crates; we offer a complete ecosystem of logistics security.<br class="d-inline">From CAD-based design to professional loading and stuffing at your site, our team<br class="d-inline">ensures your cargo remains pristine until it reaches its final destination.</p>
+                        </div>
+
+                        <!-- Bullet Points List Grid -->
+                        <div class="integrated-bulletpoint row g-3 mt-2">
+                            <div class="integrated-bulletpoint1 col-12 col-sm-6">
+                                <span class="d-flex align-items-center gap-2 fs-6 fw-semibold text-white">
+                                <img src="Image/white-arrow.png" alt="arrow" style="width: 16px; height: 16px;">Vacuum packing</span>
+                            </div>
+                            <div class="integrated-bullpoint2 col-12 col-sm-6">
+                                <span class="d-flex align-items-center gap-2 fs-6 fw-semibold text-white">
+                                <img src="Image/white-arrow.png" alt="arrow" style="width: 16px; height: 16px;">Corrugated and Wood combinations</span>
+                            </div>
+                            <div class="integrated-bulletpoint3 col-12 col-sm-6">
+                                <span class="d-flex align-items-center gap-2 fs-6 fw-semibold text-white">
+                                <img src="Image/white-arrow.png" alt="arrow" style="width: 16px; height: 16px;">24/7 Monitoring System</span>
+                            </div>
+                            <div class="integrated-bulletpoint4 col-12 col-sm-6">
+                                <span class="d-flex align-items-center gap-2 fs-6 fw-semibold text-white">
+                                <img src="Image/white-arrow.png" alt="arrow" style="width: 16px; height: 16px;">Rust Prevention Packing</span>
+                            </div>
+                            <div class="integrated-bulletpoint5 col-12 col-sm-6">
+                                <span class="d-flex align-items-center gap-2 fs-6 fw-semibold text-white">
+                                <img src="Image/white-arrow.png" alt="arrow" style="width: 16px; height: 16px;">International Shipping Standards</span>
+                            </div>
+                            <div class="integrated-bulletpoint6 col-12 col-sm-6">
+                                <span class="d-flex align-items-center gap-2 fs-6 fw-semibold text-white">
+                                <img src="Image/white-arrow.png" alt="arrow" style="width: 16px; height: 16px;">Customized Lashing Solutions</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right Column: Interactive Diagram/Circle Wrapper -->
+                    <div class="col-12 col-lg-5">
+                        <div class="right-integrated-circle position-relative mx-auto width-100" style="width: 450px; height: 450px;">
+                            
+                            <!-- Center White Hub -->
+                            <div class="center-circle position-absolute top-50 start-50 translate-middle bg-white rounded-circle d-flex flex-column align-items-center justify-content-center text-dark z-2">
+                                <img src="Image/central-hub.png" alt="central hub" style="width: 40px;" class="mb-2">
+                                <span class="fw-bold fs-6 text-uppercase">Central Hub</span>
+                            </div>
+
+                            <!-- Outside Dashed Ring & Node Items -->
+                            <div class="outside-circle position-absolute top-50 start-50 translate-middle rounded-circle z-1">
+                                <div class="circle-item1 position-absolute bg-white text-dark rounded-4 d-flex flex-column justify-content-center align-items-center translate-middle z-1">
+                                    <img src="Image/shipping.png" alt="shipping-icon" style="width: 30px;">
+                                    <span class="position-absolute bg-white text-dark rounded-3 px-2 py-1 fw-bold small">Shipping</span>
+                                </div>
+                                <div class="circle-item2 position-absolute bg-white text-dark rounded-4 d-flex flex-column justify-content-center align-items-center translate-middle z-1">
+                                    <img src="Image/storage.png" alt="Storage-icon" style="width: 30px;">
+                                    <span class="position-absolute bg-white text-dark rounded-3 px-2 py-1 fw-bold small">Storage</span>
+                                </div>
+                                <div class="circle-item3 position-absolute bg-white text-dark rounded-4 d-flex flex-column justify-content-center align-items-center translate-middle z-1">
+                                    <img src="Image/design.png" alt="design-con" style="width: 30px;">
+                                    <span class="position-absolute bg-white text-dark rounded-3 px-2 py-1 fw-bold small">Design</span>
+                                </div>
+                                <div class="circle-item4 position-absolute bg-white text-dark rounded-4 d-flex flex-column justify-content-center align-items-center translate-middle z-1">
+                                    <img src="Image/packaging.png" alt="packaging-icon" style="width: 30px;">
+                                    <span class="position-absolute bg-white text-dark rounded-3 px-2 py-1 fw-bold small">Packaging</span>
+                                </div>
+                                <div class="circle-item5 position-absolute bg-white text-dark rounded-4 d-flex flex-column justify-content-center align-items-center translate-middle z-1">
+                                    <img src="Image/lashing.png" alt="Lashing-icon" style="width: 30px;">
+                                    <span class="position-absolute bg-white text-dark rounded-3 px-2 py-1 fw-bold small">Lashing</span>
+                                </div>
+                                <div class="circle-item6 position-absolute bg-white text-dark rounded-4 d-flex flex-column justify-content-center align-items-center translate-middle z-1">
+                                    <img src="Image/loading.png" alt="Loading-icon" style="width: 30px;">
+                                    <span class="position-absolute bg-white text-dark rounded-3 px-2 py-1 fw-bold small">Loading</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="py-5 bg-white">
+            <div class="container">
+                
+                <div class="row g-4 g-lg-5">
+                    
+                    <!-- Left Column: Header and Contact Details -->
+                    <div class="col-12 col-lg-6">
+                        <div class="row g-4">
+
+                            <div class="text-start mb-5">
+                                <h2 class="fs-1 fw-bold text-dark mb-4">Contact</h2>
+                                <p class="fs-5 fw-semibold text-dark mb-0">
+                                    Our technical consultants are available for complex<br class="d-inline">structural analysis and on-site assessments.
+                                </p>
+                            </div>
+                            
+                            <!-- Phone -->
+                            <div class="col-6">
+                                <div class="d-flex flex-column">
+                                    <span class="d-flex align-items-center gap-3 text-dark fw-bold small text-uppercase mb-3">
+                                        <img src="Image/phone-icon.png" alt="Phone Icon" style="width: 18px; height: auto;">CONTACT US
+                                    </span>
+                                    <span class="fw-bold text-dark fs-6">+66 81 098 5542</span>
+                                </div>
+                            </div>
+
+                            <!-- Email -->
+                            <div class="col-6">
+                                <div class="d-flex flex-column">
+                                    <span class="d-flex align-items-center gap-3 text-dark fw-bold small text-uppercase mb-3">
+                                        <img src="Image/inquries-icon.png" alt="Inquiries Icon" style="width: 18px; height: auto;">EMAIL US
+                                    </span>
+                                    <span class="fw-bold text-dark fs-6">sales@shieldcargo.com</span>
+                                </div>
+                            </div>
+
+                            <!-- Location -->
+                            <div class="col-6">
+                                <div class="d-flex flex-column">
+                                    <span class="d-flex align-items-center gap-3 text-dark fw-bold small text-uppercase mb-3">
+                                        <img src="Image/location-icon.png" alt="Location Icon" style="width: 18px; height: auto;">LOCATION
+                                    </span>
+                                    <span class="fw-bold text-dark fs-6">101 Bangkok 110330</span>
+                                </div>
+                            </div>
+
+                            <!-- Office Hours -->
+                            <div class="col-6">
+                                <div class="d-flex flex-column">
+                                    <span class="d-flex align-items-center gap-3 text-dark fw-bold small text-uppercase mb-3">
+                                        <img src="Image/open-time.png" alt="Open Time Icon" style="width: 18px; height: auto;">OFFICE HOURS</span>
+                                    <span class="fw-bold text-dark fs-6 lh-base">MON - FRI : 8:30 AM - 5:30 PM<br>SAT : 8:30 AM - 12:00 PM<br>SUN : CLOSED</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Right Column: Inquiry Form -->
+                    <div class="col-12 col-lg-6">
+                        <form>
+                            
+                            <!-- Side-by-Side Name and Company Inputs -->
+                            <div class="row g-3 mb-3">
+                                <div class="col-12 col-md-6">
+                                    <label class="form-label fs-6 fw-bold text-dark mb-2">Contact Name</label>
+                                    <input type="text" class="form-control" placeholder="E.g. Marcus Chen" required>
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <label class="form-label fs-6 fw-bold text-dark mb-2">Company Name</label>
+                                    <input type="text" class="form-control" placeholder="E.g. Quantum Logistics" required>
+                                </div>
+                            </div>
+
+                            <!-- Project Type -->
+                            <div class="mb-3">
+                                <label class="form-label fs-6 fw-bold text-dark mb-2">Project Type</label>
+                                <input type="text" class="form-control" placeholder="Heavy Machinery / Aerospace / Energy" required>
+                            </div>
+
+                            <!-- Mission Requirements -->
+                            <div class="mb-4">
+                                <label class="form-label fs-6 fw-bold text-dark mb-2">Mission Requirements</label>
+                                <textarea class="form-control" rows="4" placeholder="Describe the scale and technical constraints of your shipment..." required></textarea>
+                            </div>
+
+                            <!-- Submit Button -->
+                            <button type="submit" class="btn-submit btn w-100 py-3 fw-bold text-white text-uppercase rounded-4 border-0">Submit Inquiry</button>
+
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer Section -->
+        <section class="bg-brand-gradient text-white position-relative py-5">
+            <div class="container">
+                
+                <!-- Scroll to Top Button -->
+                <div class="d-flex justify-content-end mb-4">
+                    <button class="scroll-top-btn d-flex justify-content-center align-items-center bg-white text-dark border-0 fs-5 rounded-circle" style="width: 40px; height: 40px;" id="scroll-top-btn" onclick="scrollToTop()">▲</button>
+                </div>
+
+                <!-- Main Footer -->
+                <div class="row g-4 mb-5">
+                    
+                    <!-- Column 1: Brand Info & Social Icons -->
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <h5 class="fw-bold fs-3 text-white mb-3">SHIELD CARGO</h5>
+                        <p class="text-white fs-6 fw-medium lh-base mb-4">Leading manufacturer and distributor<br class="d-inline">of high-quality wooden packaging
+                            <br class="d-inline">solutions. Dedicated to protecting<br class="d-inline">your global assets.
+                        </p>
+
+                        <!-- Social Media Icons -->
+                        <div class="d-flex align-items-center gap-3">
+                            <a href="https://www.facebook.com/login/?locale=en_GB" target="_blank" class="social-icon">
+                                <img src="Image/facebook.png" alt="facebook">
+                            </a>
+                            <a href="https://mail.google.com/mail/u/0/#inbox" target="_blank" class="social-icon">
+                                <img src="Image/email.png" alt="email">
+                            </a>
+                            <a href="https://www.linkedin.com/login" target="_blank" class="social-icon">
+                                <img src="Image/linkedin.png" alt="linkedin">
+                            </a>
+                            <a href="https://www.instagram.com/" target="_blank" class="social-icon">
+                                <img src="Image/instagram.png" alt="instagram">
+                            </a>
+                        </div>
+                    </div>
+
+                    <!-- Column 2: Contact Details -->
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <h5 class="fw-bold fs-5 text-white mb-4">Contact Details</h5>
+                        <ul class="d-flex flex-column text-white fs-6 fw-bold mb-0 p-0 gap-4">
+                            <li class="d-flex align-items-center gap-3">
+                                <img src="Image/location-icon2.png" alt="Location Icon" width="16">
+                                <span>101 Bangkok 110330</span>
+                            </li>
+                            <li class="d-flex align-items-center gap-3">
+                                <img src="Image/phone-icon2.png" alt="Phone Icon" width="16">
+                                <span>+66 81 098 5542</span>
+                            </li>
+                            <li class="d-flex align-items-center gap-3">
+                                <img src="Image/email-icon2.png" alt="Email Icon" width="16">
+                                <span>sales@shieldcargo.com</span>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <!-- Column 3: Quick Links -->
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <h5 class="fw-bold fs-5 text-white mb-3">Quick Links</h5>
+                        <ul class="footer-link-list d-flex flex-column mb-0 gap-2 list-unstyled">
+                            <li><a href="about.html" class="text-white d-line-block text-decoration-none fs-6 py-1">About Company</a></li>
+                            <li><a href="product.html" class="text-white d-line-block text-decoration-none fs-6 py-1">Wooden Crates</a></li>
+                            <li><a href="product.html" class="text-white d-line-block text-decoration-none fs-6 py-1">Vacuum Packaging</a></li>
+                            <li><a href="service.html" class="text-white d-line-block text-decoration-none fs-6 py-1">Shipping Policy</a></li>
+                            <li><a href="service.html" class="text-white d-line-block text-decoration-none fs-6 py-1">Terms of Service</a></li>
+                            <li><a href="contact.html" class="text-white d-line-block text-decoration-none fs-6 py-1">Career Opportunities</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Column 4: Office Hours Box -->
+                    <div class="col-12 col-md-6 col-lg-3">
+                        <h5 class="fw-bold fs-5 text-white mb-4">Office Hours</h5>
+                        <div class="office-box bg-white text-dark rounded-3 p-3" style="width: 250px; max-width: 100%;">
+                            <h6 class="fw-bold fs-6 d-flex align-items-center gap-2 mb-2"><img src="Image/clock-icon.png" alt="Clock Icon">Operation Hours</h6>
+                            <span class="fw-bold small lh-lg d-line-block">MON - FRI : 8:30 AM - 5:30 PM<br class="d-line">SAT : 8:30 AM - 12:00 PM<br class="d-line">SUN : CLOSED</span>
+                        </div>
+                    </div>
+                </div>
+
+                <hr class="footer-line my-5 border-0" style="height: 1px; opacity: 1; background-color: rgba(255, 255, 255, 0.3);">
+
+                <!-- Bottom Copyright Row -->
+                <div class="d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
+                    <div class="text-white fw-semibold small">© 2026 SHIELD CARGO SERVICE. ALL PROTOCOLS RESERVED.</div>
+                    <ul class="list-inline mb-0">
+                        <li class="list-inline-item me-4">
+                            <a href="#" onclick="return false;" class="text-white text-decoration-none fw-semibold small">DATA PRIVACY</a>
+                        </li>
+                        <li class="list-inline-item me-4">
+                            <a href="#" onclick="return false;" class="text-white text-decoration-none fw-semibold small">SYSTEM TERMS</a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a href="#" onclick="return false;" class="text-white text-decoration-none fw-semibold small">SECURITY PROTOCOL</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
+    <script src="script.js"></script>
+
+</body>
+</html>
