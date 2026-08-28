@@ -1,0 +1,246 @@
+.font {
+    font-family: var(--bs-font-sans-serif);
+}
+
+/* top banner */
+
+.bg-brand-gradient {
+    background: linear-gradient(to right, #3d3d9c, #09094a);
+}
+
+.navbar-nav .nav-link {
+    color: white !important;
+    transition: all 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #eb4444 !important;
+    border-bottom: 2px solid #eb4444;
+}
+
+.btn-colour {
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.btn-colour:hover {
+   background:white !important;
+   color:black !important; 
+}
+
+.language-colour span {
+    transition: color 0.3s ease;
+    cursor: pointer;
+}
+
+.language-colour span:hover {
+    color: #eb4444 !important;
+}
+
+.language-colour span.active {
+    color: #eb4444 !important;
+}
+
+/* hero section */
+
+.hover-lift { 
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.hover-lift:hover {
+    background-color: black !important;
+    color: white !important;
+    transform: translateY(-2px);
+}
+
+.hero-image {
+    cursor: pointer;
+}
+
+.carousel-indicators {
+    margin-bottom: 15px !important;
+    gap: 6px;
+}
+
+.carousel-indicators button {
+    width: 38px !important;
+    height: 8px !important;
+    background-color: white !important;
+    border: none !important;
+    border-radius: 4px;
+    transition: all 0.3s ease;
+}
+
+.carousel-indicators .active {
+    background-color: black !important;
+    opacity: 1;
+    width: 32px !important;
+}
+
+/* contact section */
+
+.contact-card {
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.contact-card:hover {
+    transform: scale(1.03);
+}
+
+/* Service Offering section */
+
+.btn-light {
+    transition: all 0.3s ease;
+}
+
+.btn-light:hover {
+    background-color: #eb4444 !important;
+    color: white !important;
+}
+
+.service-full-card {
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.service-full-card:hover {
+    transform: translateY(-5px);
+}
+
+.service-img-container {
+    height: 220px;
+}
+
+.service-tag {
+    top: 175px;
+    left: 20px;
+    background-color: #eb4444;
+}
+
+/* Wooden Packaging Solutions section */
+
+.solution-card {
+    transition: transform 0.3s ease;
+    cursor: pointer;
+}
+
+.solution-card:hover {
+    transform: translateY(-4px);
+}
+
+.solution-card-img {
+    transition: transform 0.3s ease;
+}
+
+.solution-card:hover .solution-card-img {
+    transform: scale(1.05);
+}
+
+.solution-overlay {
+    inset: 0;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.1) 0%, rgba(0, 0, 0, 0.70) 100%);
+}
+
+/* Job References section */
+
+.job-reference-btn {
+    color: #eb4444;
+    border: 2px solid #eb4444;
+    transition: all 0.3s ease;
+}
+
+.job-reference-btn:hover {
+    background-color: #eb4444;
+    color: white !important;
+    border-color: #eb4444;
+}
+
+.job-image-column img {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer;
+}
+
+.job-image-column img:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.50) !important;
+}
+
+/* Integrated Process section */
+
+.center-circle {
+    width: 220px;
+    height: 220px;
+}
+
+.outside-circle {
+    width: 420px;
+    height: 420px;
+    border: 2px dashed white;
+}
+
+.outside-circle > div {
+    width: 70px;
+    height: 70px;
+}
+
+.outside-circle > div span {
+    bottom: -32px;
+    font-size: 13px;
+}
+
+.circle-item1 { top: 15%; left: 15%; }  /* Top Left */
+.circle-item2 { top: 15%; left: 85%; }  /* Top Right */
+.circle-item3 { top: 50%; left: 100%; } /* Middle Right */
+.circle-item4 { top: 85%; left: 85%; }  /* Bottom Right */
+.circle-item5 { top: 85%; left: 15%; }  /* Bottom Left */
+.circle-item6 { top: 50%; left: 0%; }   /* Middle Left */
+
+/* Contact section */
+
+.btn-submit {
+    background-color: #eb4444;
+    transition: background-color 0.3s ease;
+}
+
+.btn-submit:hover {
+    background-color: black;
+}
+
+.form-control {
+    border-color: #e5e7eb;
+    background-color: #f9fafb;
+    padding: 0.75rem 1rem;
+}
+
+.form-control:focus {
+    background-color: white;
+    border-color: #eb4444;
+    box-shadow: 0 0 0 0.2rem rgba(239, 68, 68, 0.15);
+}
+
+/* Footer */
+
+.scroll-top-btn {
+    transition: transform 0.2s ease;
+    cursor: pointer;
+}
+
+.scroll-top-btn:hover {
+    transform: translateY(-4px);
+}
+
+.social-icon {
+    transition: transform 0.3s ease;
+}
+
+.social-icon:hover {
+    transform: scale(1.2);
+}
+
+.footer-link-list a {
+    transition: border-bottom 0.3s ease;
+}
+
+.footer-link-list a:hover {
+    border-bottom: 2px solid #eb4444;
+}
