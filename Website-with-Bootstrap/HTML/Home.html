@@ -649,18 +649,14 @@
         <!-- Contact Section -->
         <section class="py-5 bg-white">
             <div class="container">
-                
                 <div class="row g-4 g-lg-5">
                     
                     <!-- Left Column: Header and Contact Details -->
                     <div class="col-12 col-lg-6">
                         <div class="row g-4">
-
                             <div class="text-start mb-5">
                                 <h2 class="fs-1 fw-bold text-dark mb-4">Contact</h2>
-                                <p class="fs-5 fw-semibold text-dark mb-0">
-                                    Our technical consultants are available for complex<br class="d-inline">structural analysis and on-site assessments.
-                                </p>
+                                <p class="fs-5 fw-semibold text-dark mb-0">Our technical consultants are available for complex<br class="d-inline-block">structural analysis and on-site assessments.</p>
                             </div>
                             
                             <!-- Phone -->
@@ -704,37 +700,39 @@
                         </div>
                     </div>
 
-                    <!-- Right Column: Inquiry Form -->
+                    <!-- Right Column : Inquiry Form -->
                     <div class="col-12 col-lg-6">
-                        <form>
+                        
+                        <form class="needs-validation" novalidate>
                             
-                            <!-- Side-by-Side Name and Company Inputs -->
+                            <!-- Name and Company -->
                             <div class="row g-3 mb-3">
                                 <div class="col-12 col-md-6">
-                                    <label class="form-label fs-6 fw-bold text-dark mb-2">Contact Name</label>
-                                    <input type="text" class="form-control" placeholder="E.g. Marcus Chen" required>
+                                    <label for="contactName" class="form-label fs-6 fw-bold text-dark mb-2">Contact Name</label>
+                                    <input type="text" class="form-control" id="contactName" placeholder="E.g. Marcus Chen" required>
+                                    <div class="invalid-feedback">Please enter your contact name.</div>
                                 </div>
                                 <div class="col-12 col-md-6">
-                                    <label class="form-label fs-6 fw-bold text-dark mb-2">Company Name</label>
-                                    <input type="text" class="form-control" placeholder="E.g. Quantum Logistics" required>
+                                    <label for="companyName" class="form-label fs-6 fw-bold text-dark mb-2">Company Name</label>
+                                    <input type="text" class="form-control" id="companyName" placeholder="E.g. Quantum Logistics" required>
+                                    <div class="invalid-feedback">Please enter your company name.</div>
                                 </div>
                             </div>
 
                             <!-- Project Type -->
                             <div class="mb-3">
-                                <label class="form-label fs-6 fw-bold text-dark mb-2">Project Type</label>
-                                <input type="text" class="form-control" placeholder="Heavy Machinery / Aerospace / Energy" required>
+                                <label for="projectType" class="form-label fs-6 fw-bold text-dark mb-2">Project Type</label>
+                                <input type="text" class="form-control" id="projectType" placeholder="Heavy Machinery / Aerospace / Energy" required>
+                                <div class="invalid-feedback">Please specify your project type.</div>
                             </div>
 
                             <!-- Mission Requirements -->
                             <div class="mb-4">
-                                <label class="form-label fs-6 fw-bold text-dark mb-2">Mission Requirements</label>
-                                <textarea class="form-control" rows="4" placeholder="Describe the scale and technical constraints of your shipment..." required></textarea>
+                                <label for="missionRequirements" class="form-label fs-6 fw-bold text-dark mb-2">Mission Requirements</label>
+                                <textarea class="form-control" id="missionRequirements" rows="4" placeholder="Describe the scale and technical constraints of your shipment..." required></textarea>
+                                <div class="invalid-feedback">Please describe your mission requirements.</div>
                             </div>
-
-                            <!-- Submit Button -->
                             <button type="submit" class="btn-submit btn w-100 py-3 fw-bold text-white text-uppercase rounded-4 border-0">Submit Inquiry</button>
-
                         </form>
                     </div>
                 </div>
@@ -842,7 +840,7 @@
     </section>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-    <script src="script.js"></script>
+    <script src="Home-script.js"></script>
 
 </body>
 </html>
