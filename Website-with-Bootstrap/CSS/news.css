@@ -1,0 +1,88 @@
+.font {
+    font-family: var(--bs-font-sans-serif);
+}
+
+/* top banner */
+
+.bg-brand-gradient {
+    background: linear-gradient(to right, #3d3d9c, #09094a);
+}
+
+.navbar-nav .nav-link {
+    color: white !important;
+    transition: all 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+    color: #eb4444 !important;
+    border-bottom: 2px solid #eb4444;
+}
+
+.btn-colour {
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.btn-colour:hover {
+   background:white !important;
+   color:black !important; 
+}
+
+.language-colour span {
+    transition: color 0.3s ease;
+    cursor: pointer;
+}
+
+.language-colour span:hover {
+    color: #eb4444 !important;
+}
+
+.language-colour span.active {
+    color: #eb4444 !important;
+}
+
+/* Articles section */
+
+.article-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.article-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.20);
+}
+
+.read-more {
+  transition: color 0.2s ease;
+  cursor: pointer;
+}
+
+.read-more:hover {
+  color: #eb4444 !important;
+}
+
+/* Footer */
+
+.scroll-top-btn {
+    transition: transform 0.2s ease;
+    cursor: pointer;
+}
+
+.scroll-top-btn:hover {
+    transform: translateY(-4px);
+}
+
+.social-icon {
+    transition: transform 0.3s ease;
+}
+
+.social-icon:hover {
+    transform: scale(1.2);
+}
+
+.footer-link-list a {
+    transition: border-bottom 0.3s ease;
+}
+
+.footer-link-list a:hover {
+    border-bottom: 2px solid #eb4444;
+}
